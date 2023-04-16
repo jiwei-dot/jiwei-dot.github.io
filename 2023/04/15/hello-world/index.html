@@ -169,7 +169,7 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/musics">
+        <a href="/medias/musics">
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -178,7 +178,7 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
       </li>
       
       <li>
-        <a href="/movies">
+        <a href="/medias/movies">
           
           <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -327,7 +327,7 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
               
                 <li>
 
-                  <a href="/musics " style="margin-left:75px">
+                  <a href="/medias/musics " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
 			      
@@ -337,7 +337,7 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
               
                 <li>
 
-                  <a href="/movies " style="margin-left:75px">
+                  <a href="/medias/movies " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
 			      
@@ -534,7 +534,7 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
         <div class="card-content article-card-content">
             <div id="articleContent">
                 
-    <div id="aplayer-ZwWbbyDC" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-BqyvddVD" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="1474042368" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-loop="all" data-order="one" data-listfolded="true"
     ></div>
 
@@ -670,6 +670,33 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
             
         </div>
     </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '88d2e6758ee892e6db71',
+        clientSecret: '7d63362e3cd389aa713cd2dff38aada30581fc7b',
+        repo: 'https://jiwei-dot.github.io/',
+        owner: 'jiwei-dot',
+        admin: null,
+        id: '2023-04-15T16-00-17',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
 
     
 
@@ -924,7 +951,7 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="5474951434"
+                   id="2221783730"
                    fixed='true'
                    autoplay='true'
                    theme='#42b983'
