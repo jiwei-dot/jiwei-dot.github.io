@@ -670,10 +670,7 @@
     
     <div class="row">
 		
-        <div class="col l8 offset-l2 m10 offset-m1 s12">
-            <div id="dplayer" class="dplayer-video"
-                     style="height: 500px;"></div>
-        </div>
+			<iframe src='//player.bilibili.com/player.html?bvid=BV1k3411g7J6&cid=742733387&page=1&share_source=copy_web' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" align="middle"  style="height: 500px;" width="100%"> </iframe>
 		
     </div>
 </div>
@@ -690,7 +687,7 @@
             preload: 'none',
             volume: Number('0.7'),
             video: {
-                url: 'https://www.bilibili.com/video/BV1e54y137wG?share_source=copy_web',
+                url: '',
                 pic: '',
                 thumbnails: ''
             }
@@ -775,12 +772,16 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
 <style>
     .aplayer .aplayer-lrc p {
         
+        display: none;
+        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -805,7 +806,7 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
                    type="playlist"
                    id="5474951434"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
