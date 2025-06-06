@@ -63,7 +63,7 @@ cf8acd5 ignore .vscode
 ```sh
 git bisect start HEAD 3e3ac9f
 ```
-HEAD代表当前存在问题的commit， 3e3ac9f代表上一次发版功能验证正常的commit，此时git会给我们自动切换到cf8acd5，我们此时可以基于该commit进行版本验证，如果验证正常就运行：
+HEAD代表当前存在问题的commit，3e3ac9f代表上一次发版功能验证正常的commit，此时git会给我们自动切换到cf8acd5，我们此时可以基于该commit进行版本验证，如果验证正常就运行：
 ```sh
 git bisect good
 ```
@@ -71,7 +71,7 @@ git bisect good
 ```sh
 git bisect bad
 ```
-运行到最后git就会输出一句话告诉我们出错的commit:
+一直重复下去，直到运行到最后git就会输出一句话告诉我们出错的commit:
 ```sh
 5a21ae52ad735a5193cbc7c40af414b02500a87b is the first bad commit
 commit 5a21ae52ad735a5193cbc7c40af414b02500a87b
@@ -82,4 +82,8 @@ Date:   Sat Jun 7 00:31:55 2025 +0800
 
  test.cpp | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
+```
+最后我们运行下面这个命令退出二分搜索模式：
+```sh
+git bisect reset
 ```
